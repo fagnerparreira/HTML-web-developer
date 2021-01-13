@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="fagne"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-12 10:53:27 "/>
+        <attribute name="created" value="ZmFnbmU7REVTS1RPUC00UUk1RzVKOzIwMjEtMDEtMTI7IjEwOjQwOjU4ICI7MjczNQ=="/>
+        <attribute name="edited" value="ZmFnbmU7REVTS1RPUC00UUk1RzVKOzIwMjEtMDEtMTI7IjEwOjUzOjI3ICI7MjsyODQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="janeiro, fevereiro, marco, abril, media" type="Real" array="False" size=""/>
+            <input variable="janeiro"/>
+            <input variable="fevereiro"/>
+            <input variable="marco"/>
+            <input variable="abril"/>
+            <assign variable="media" expression="(janeiro+fevereiro+marco+abril)/4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media&gt;=5000">
+                <then>
+                    <output expression="&quot;Parab&#233;ns !! Voc&#234;  bateu a meta!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelismente Voc&#234; nao bateu a media!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
